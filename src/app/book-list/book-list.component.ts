@@ -11,9 +11,12 @@ import { delay } from 'rxjs/operators';
 })
 export class BookListComponent implements OnInit {
   books: Book[];
-
+ state
   constructor(private bs: BookStoreService) {}
   ngOnInit(): void {
     this.bs.getAll().pipe(delay(1000)).subscribe(res => this.books = res)
   }
+
+  
+
 }

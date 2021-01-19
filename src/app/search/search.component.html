@@ -1,0 +1,10 @@
+<div class="ui search">
+  <div class="ui icon input">
+    <input
+      type="text"
+      class="prompt"
+      (keyup)="keyup$.next($event.target.value)"
+    />
+    <i class="search icon"></i>
+  </div>
+</div>
