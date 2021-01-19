@@ -1,6 +1,13 @@
-<h1>hallo
-</h1>
-<h1>Bye</h1>
-{{
-     title
-}}
+<!-- <bm-book-list *ngIf="viewState === 'list'" (showDetailsEvent)="showDetails($event)">
+</bm-book-list>
+
+<bm-book-details *ngIf="viewState === 'details'" (showListEvent)="showlist()" [book]="book"></bm-book-details> -->
+
+
+
+
+<div class="ui menu">
+    <a routerLink="home" routerLinkActive="active" class="item">Home</a>
+    <a routerLink="books" routerLinkActive="active" class="item">Bücher</a>
+</div>
+<router-outlet></router-outlet>
